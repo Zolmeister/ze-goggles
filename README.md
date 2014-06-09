@@ -1,5 +1,9 @@
 # Static api documentation generation
 
+#### zego
+`npm install -g ze-goggles`  
+`zego -i my_doc.json -o my_doc.md`
+
 #### example
 ```js
 [
