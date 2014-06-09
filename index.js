@@ -4,6 +4,7 @@
 var program = require('commander')
 var fs = require('fs')
 var _ = require('lodash')
+var url = require('url')
 
 program
   .version('0.0.1')
@@ -20,7 +21,7 @@ var markdown = _.map(titles, function (title) {
   }), function (doc) {
     return [
       '### ' + doc.description,
-      '##### ' + doc.req.method + ' ' + doc.req.uri,
+    '##### ' + doc.req.method + ' ' + url.parse(doc.req.uri).pathname,
       '```js',
       '// req',
       JSON.stringify(doc.req.json, null, 4),
@@ -33,4 +34,4 @@ var markdown = _.map(titles, function (title) {
   }).join('\n')
 }).join('\n')
 
-fs.writeFileSync(program.output)
+fs.writeFileSync(program.output, markdown)
