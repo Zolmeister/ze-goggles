@@ -1,0 +1,22 @@
+{
+  "name": "ze-goggles",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Zolmeister/ze-goggles.git"
+  },
+  "author": "",
+  "bin": {
+    "zego": "index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Zolmeister/ze-goggles/issues"
+  },
+  "homepage": "https://github.com/Zolmeister/ze-goggles",
+  "dependencies": {
+    "commander": "2.2.0",
+    "lodash": "2.4.1"
+  }
+}
