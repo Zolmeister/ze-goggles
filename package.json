@@ -1,6 +1,6 @@
 {
   "name": "ze-goggles",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Static api documentation generation",
   "keywords": [
     "api",
@@ -22,6 +22,7 @@
   "bugs": {
     "url": "https://github.com/Zolmeister/ze-goggles/issues"
   },
+  "license": "MIT",
   "homepage": "https://github.com/Zolmeister/ze-goggles",
   "dependencies": {
     "commander": "2.2.0",
