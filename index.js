@@ -19,6 +19,9 @@ var markdown = _.map(titles, function (title) {
   return '#' + title + '\n' + _.map(_.filter(docs, function (doc) {
     return doc.title === title
   }), function (doc) {
+    if (typeof doc.res.body === 'string') {
+      doc.res.body = JSON.parse(doc.res.body)
+    }
     return [
       '### ' + doc.description,
     '##### ' + doc.req.method + ' ' + url.parse(doc.req.uri).pathname,

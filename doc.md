@@ -21,7 +21,7 @@
 ```
 ```js
 // res
-"\"hello joe\""
+"hello joe"
 ```
 ### Reflect joe
 ##### put /mirror
@@ -46,7 +46,10 @@
 ```
 ```js
 // res
-"{\"code\":\"ResourceNotFound\",\"message\":\"/404 does not exist\"}"
+{
+    "code": "ResourceNotFound",
+    "message": "/404 does not exist"
+}
 ```
 ### 404 error!!!!!!
 ##### get /rawr
@@ -56,7 +59,10 @@
 ```
 ```js
 // res
-"{\"code\":\"ResourceNotFound\",\"message\":\"/rawr does not exist\"}"
+{
+    "code": "ResourceNotFound",
+    "message": "/rawr does not exist"
+}
 ```
 #Delete
 ### No errors here
