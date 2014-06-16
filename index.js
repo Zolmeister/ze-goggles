@@ -24,7 +24,7 @@ var markdown = _.map(titles, function (title) {
     }
     return [
       '### ' + doc.description,
-    '##### ' + doc.req.method + ' ' + url.parse(doc.req.uri).pathname,
+    '##### ' + doc.req.method + ' ' + url.parse(doc.req.uri).path,
       '```js',
       '// req',
       JSON.stringify(doc.req.json, null, 4),

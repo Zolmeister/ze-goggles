@@ -14,7 +14,7 @@
 }
 ```
 ### Say hello to joe
-##### get /hello/joe
+##### get /hello/joe?test=a
 ```js
 // req
 
